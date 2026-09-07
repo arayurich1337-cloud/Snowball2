@@ -1,0 +1,67 @@
+name: Мониторинг портфеля → Telegram
+
+on:
+  schedule:
+    # Раз в 5 минут, по будням, в часы торгов Мосбиржи (07:00–18:55 UTC = 10:00–21:55 МСК).
+    # Тихо и не слишком нагружающе? Поставь '*/15 7-18 * * 1-5'.
+    # Круглосуточно каждые 5 минут (≈8600 запусков/мес) — '*/5 * * * *', не советую.
+    - cron: '*/5 7-18 * * 1-5'
+  workflow_dispatch: {}        # кнопка "Run workflow" — запуск и проверка вручную
+
+# Публичный репозиторий = безлимитные бесплатные минуты Actions.
+# Приватный даёт всего 2000 минут/мес — боту их не хватит.
+permissions:
+  contents: write              # чтобы закоммитить обратно state.json
+                               # (и выставь Read-and-write в Settings → Actions → General)
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Установка библиотек
+        run: |
+          pip install --quiet requests beautifulsoup4 lxml playwright
+          playwright install --with-deps chromium
+
+      - name: Хеш состояния до прогона        # чтобы не плодить пустые коммиты
+        run: |
+          if [ -f state.json ]; then sha256sum state.json | cut -d' ' -f1 > .state_before
+          else echo none > .state_before; fi
+
+      - name: Проверка портфеля
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_IDS: ${{ secrets.TELEGRAM_CHAT_IDS }}
+          USE_BROWSER: 1
+        run: python bot.py
+
+      - name: Доступен ли сайт из сети GitHub (диагностика)
+        if: always()
+        run: |
+          url=$( (grep -v '^#' portfolio.txt 2>/dev/null || true) | grep . | head -1)
+          url=${url:-https://snowball-income.com/public/portfolios/ukbRjaXjfg}
+          code=$(curl -s -o /dev/null -w '%{http_code}' -A "Mozilla/5.0" --max-time 25 "$url" || echo 000)
+          echo "HTTP $code для $url"
+          echo "Если код не 200 — сайт блокирует адреса дата-центров GitHub: тогда из Actions ничего не выйдет, нужен VPS."
+
+      - name: Сохранить состояние, только если оно изменилось
+        if: always()
+        run: |
+          if [ ! -f state.json ]; then echo "state.json нет — коммитить нечего"; exit 0; fi
+          now=$(sha256sum state.json | cut -d' ' -f1)
+          if [ "$now" = "$(cat .state_before 2>/dev/null || echo none)" ]; then
+            echo "Состояние не изменилось — пустых коммитов не будет"
+            exit 0
+          fi
+          git config user.name  "portfolio-bot"
+          git config user.email "portfolio-bot@users.noreply.github.com"
+          git add state.json
+          git diff --cached --quiet || git commit -m "state: $(date -u '+%Y-%m-%d %H:%M') UTC"
+          git push
