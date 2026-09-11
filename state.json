@@ -1614,7 +1614,7 @@
     "933455acabbbfbe5": 1,
     "cd9b821ba6f5e37c": 1
   },
-  "count": 3654,
+  "count": 3662,
   "baseline": true,
   "warn_at": 0,
   "pairs": [
@@ -1636,12 +1636,12 @@
   ],
   "error": "",
   "how": "browser",
-  "last_ok": 1789133734,
+  "last_ok": 1789134379,
   "pending": [],
   "deep": false,
   "pages": 1,
   "name": "Облигационные фантазии",
-  "last_date": "2026-09-10",
+  "last_date": "2026-09-11",
   "site_total": 3672,
   "total": 3672,
   "muted": [],
