@@ -1,0 +1,96 @@
+name: Мониторинг портфеля → Telegram
+
+on:
+  schedule:
+    # Будни 06:00–00:55 МСК (= 03:00–21:00 UTC). Вечерняя сессия Мосбиржи идёт до
+    # 23:50 МСК: прежние «10:00–22:00» резали вечер и утро — такие сделки приходить
+    # могли только следующим утром (и прилетали сводкой, а не лично).
+    - cron: '*/5 3-21 * * 1-5'
+    # Сессии выходного дня (суббота и воскресенье, 09:50–19:00 МСК) — реже.
+    # Без этой строки все сделки субботы и воскресенья приезжали только в понедельник.
+    - cron: '*/10 6-16 * * 0,6'
+  workflow_dispatch: {}        # кнопка "Run workflow" — запуск и проверка вручную
+
+# Прогоны НЕ должны накладываться: два параллельных запуска пилят один и тот же
+# state.json, и второй push всегда получает «rejected (fetch first)». Новый прогон
+# подождёт окончания текущего, а не сломает его.
+concurrency:
+  group: portfolio-watch
+  cancel-in-progress: false
+
+# Публичный репозиторий = безлимитные бесплатные минуты Actions.
+# Приватный даёт всего 2000 минут/мес — боту их не хватит.
+permissions:
+  contents: write              # чтобы закоммитить обратно state.json
+                               # (и выставь Read-and-write в Settings → Actions → General)
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Установка библиотек
+        run: |
+          pip install --quiet requests beautifulsoup4 lxml playwright
+          playwright install --with-deps chromium
+
+      - name: Хеш состояния до прогона        # чтобы не плодить пустые коммиты
+        run: |
+          if [ -f state.json ]; then sha256sum state.json | cut -d' ' -f1 > .state_before
+          else echo none > .state_before; fi
+
+      - name: Проверка портфеля
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_IDS: ${{ secrets.TELEGRAM_CHAT_IDS }}
+          USE_BROWSER: 1
+          # Сколько дней считаем сделку свежей (в ленту; остальное — в /old).
+          # Настроить без правки кода: Settings → Actions → General → Actions variables
+          # → новая переменная FRESH_DAYS (например 3 или 0 = слать всё).
+          FRESH_DAYS: ${{ vars.FRESH_DAYS }}
+        run: python bot.py
+
+      - name: Доступен ли сайт из сети GitHub (диагностика)
+        if: always()
+        run: |
+          url=$( (grep -v '^#' portfolio.txt 2>/dev/null || true) | grep . | head -1)
+          url=${url:-https://snowball-income.com/public/portfolios/ukbRjaXjfg}
+          code=$(curl -s -o /dev/null -w '%{http_code}' -A "Mozilla/5.0" --max-time 25 "$url" || echo 000)
+          echo "HTTP $code для $url"
+          echo "Если код не 200 — сайт закрылся от адресов дата-центра GitHub: тогда из Actions ничего не выйдет, нужен VPS."
+
+      - name: Сохранить состояние, только если оно изменилось
+        if: always()
+        run: |
+          if [ ! -f state.json ]; then echo "state.json нет — коммитить нечего"; exit 0; fi
+          now=$(sha256sum state.json | cut -d' ' -f1)
+          if [ "$now" = "$(cat .state_before 2>/dev/null || echo none)" ]; then
+            echo "Состояние не изменилось — пустых коммитов не будет"
+            exit 0
+          fi
+          git config user.name  "portfolio-bot"
+          git config user.email "portfolio-bot@users.noreply.github.com"
+          git add state.json
+          git commit -m "state: $(date -u '+%Y-%m-%d %H:%M') UTC" || { echo "менять нечего"; exit 0; }
+          br=$(git rev-parse --abbrev-ref HEAD)
+          [ "$br" = "HEAD" ] && br=${{ github.ref_name }}
+          # Удалённая ветка могла уйти вперёд (ты правил файл в веб-интерфейсе или
+          # успел другой прогон). Тогда push отклоняют, и состояние теряется — а без
+          # состояния следующий запуск шлёт уже отправленные сделки заново. Лечится
+          # так: подтянуть чужие коммиты поверх своих и повторить. Конфликт по
+          # state.json решается в НАШУ пользу (-X theirs при rebase = наш коммит).
+          for i in 1 2 3 4 5; do
+            if git push origin "HEAD:$br" 2>/dev/null; then
+              echo "✅ состояние сохранено (попытка $i)"; exit 0
+            fi
+            echo "push отклонён — подтягиваю main и повторяю ($i/5)"
+            sleep $((i * 7))
+            git pull --rebase -X theirs --autostash origin "$br" || git rebase --abort || true
+          done
+          echo "::warning::state.json не удалось закоммитить с 5 попыток. Уведомления это не ломает, но следующий запуск может повторить уже отправленные сделки."
