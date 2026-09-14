@@ -2698,7 +2698,7 @@
   },
   "count": 3668,
   "baseline": true,
-  "warn_at": 0,
+  "warn_at": 1789405845,
   "pairs": [
     "422491613"
   ],
@@ -2717,9 +2717,9 @@
     778627065,
     778627066
   ],
-  "error": "",
-  "how": "browser",
-  "last_ok": 1789405072,
+  "error": "ни один способ не вернул HTML",
+  "how": "http",
+  "last_ok": 1789405846,
   "pending": [],
   "deep": false,
   "pages": 1,
