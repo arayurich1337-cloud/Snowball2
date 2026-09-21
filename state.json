@@ -5795,7 +5795,7 @@
     "817b55cb9dd0a6ff": 1,
     "07e05e7b0794e267": 1
   },
-  "count": 3745,
+  "count": 3747,
   "baseline": true,
   "warn_at": 1789405845,
   "pairs": [
@@ -5821,7 +5821,7 @@
   ],
   "error": "",
   "how": "browser",
-  "last_ok": 1789999955,
+  "last_ok": 1790000982,
   "pending": [],
   "deep": false,
   "pages": 1,
