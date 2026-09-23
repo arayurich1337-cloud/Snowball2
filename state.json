@@ -7248,7 +7248,7 @@
     "5cd87850c3b5873a": 1,
     "a7e5c429f53013f3": 1
   },
-  "count": 3754,
+  "count": 3755,
   "baseline": true,
   "warn_at": 1789405845,
   "pairs": [
@@ -7274,7 +7274,7 @@
   ],
   "error": "",
   "how": "browser",
-  "last_ok": 1790179700,
+  "last_ok": 1790180857,
   "pending": [],
   "deep": false,
   "pages": 1,
