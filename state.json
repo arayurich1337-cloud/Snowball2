@@ -6951,7 +6951,6 @@
     "9642b94676ebb2c0": 1,
     "78377cc9188c0f8c": 1,
     "d05efee1ba64a14e": 1,
-    "023351dd91f0d129": 1,
     "119eab3511bbc115": 1,
     "ef2a80461b874b75": 1,
     "a464f6a5c01fe094": 1,
@@ -7223,9 +7222,19 @@
     "e07979b0343740c6": 1,
     "80756145766d3af6": 1,
     "323abebc5f93bf47": 1,
-    "870349f3ed54d594": 1,
     "44820a88eba90519": 1,
     "144611bf11f4b7b2": 1,
+    "9d6e61af2c045a25": 1,
+    "57c32ed37c2f3c47": 1,
+    "b32cd0715f3a11af": 1,
+    "0820da794bb394b4": 1,
+    "dddf0b07ad44cf9e": 1,
+    "4bcf710b72e6ccc3": 1,
+    "18c3dbc5a46f381e": 1,
+    "1032b18bd0c02363": 1,
+    "b62aeb729035f5d8": 1,
+    "710cfbabb1f3c48e": 1,
+    "36809d910bf88ebd": 1,
     "8c6df22fef803583": 1,
     "d30263c216d66c3a": 1,
     "18ed68b4cd0b8aa8": 1,
@@ -7274,8 +7283,8 @@
     "fc61880de054df2e": 1,
     "336e467d50e6d9bf": 1,
     "1e67b81fb54d6f1a": 1,
-    "9d6e61af2c045a25": 1,
-    "57c32ed37c2f3c47": 1,
+    "03941e9e378a2c15": 1,
+    "7f574e950486ec2b": 1,
     "919877a234d5c5ee": 1,
     "a683defbb142ae5e": 1,
     "59194b4b07eecf15": 1,
@@ -7286,12 +7295,12 @@
     "f8181d98590787a3": 1,
     "9571792ea661ce3b": 1,
     "df00c7ded1ebbd56": 1,
-    "b32cd0715f3a11af": 1,
+    "ff80f48e7739fb3d": 1,
     "43447e9bd83d2321": 1,
-    "0820da794bb394b4": 1,
-    "dddf0b07ad44cf9e": 1,
-    "4bcf710b72e6ccc3": 1,
-    "18c3dbc5a46f381e": 1,
+    "d39ae65e4472c0be": 1,
+    "69fe44e673929a89": 1,
+    "9e6d8f74dc432d3c": 1,
+    "3c3b4316422a30e6": 1,
     "87bb49c01e630890": 1,
     "0ad7b679b17d6bba": 1,
     "075372de5b32445f": 1,
@@ -7309,10 +7318,10 @@
     "8de76ea877b97d85": 1,
     "e5e0d905d5858538": 1,
     "f2362460359a882a": 1,
-    "1032b18bd0c02363": 1,
-    "b62aeb729035f5d8": 1,
+    "870349f3ed54d594": 1,
+    "023351dd91f0d129": 1,
     "b7f48b33dad48670": 1,
-    "710cfbabb1f3c48e": 1,
+    "b9e13375084ada39": 1,
     "18c0572a5f47f082": 1,
     "19213d925840985d": 1,
     "817b55cb9dd0a6ff": 1,
@@ -7320,14 +7329,14 @@
     "07e05e7b0794e267": 1,
     "c6f7ad9d324d6099": 1,
     "e0c4dfcd0b6368d4": 1,
-    "36809d910bf88ebd": 1,
+    "76b362408829bd88": 1,
     "a6bee512dd10daf0": 1,
     "16a9b4afe68fc51c": 1,
     "a7e5c429f53013f3": 1,
     "0ca91b3960fee57a": 1,
     "5cd87850c3b5873a": 1
   },
-  "count": 3755,
+  "count": 3757,
   "baseline": true,
   "warn_at": 1789405845,
   "pairs": [
@@ -7353,7 +7362,7 @@
   ],
   "error": "",
   "how": "browser",
-  "last_ok": 1790187392,
+  "last_ok": 1790188594,
   "pending": [],
   "deep": false,
   "pages": 1,
@@ -7365,63 +7374,15 @@
   "old_hold": [
     {
       "operation": "Покупка",
-      "asset": "Эталон-Финанс 002Р-03",
-      "isin": "RU000A10BAP4",
+      "asset": "АСВ БО-05-001P",
+      "isin": "RU000A10FJJ9",
       "date": "21/09/2026",
       "qty": "100",
-      "price": "999,00 ₽",
-      "commission": "59,94 ₽",
-      "amount": "101 286,94 ₽",
-      "profit_pct": "1,34%",
-      "profit_abs": "+1 360,06 ₽"
-    },
-    {
-      "operation": "Покупка",
-      "asset": "Страна Девелопмент 03",
-      "isin": "RU000A10BP46",
-      "date": "21/09/2026",
-      "qty": "100",
-      "price": "1 000,00 ₽",
-      "commission": "60,00 ₽",
-      "amount": "100 278,00 ₽",
-      "profit_pct": "0,61%",
-      "profit_abs": "+615,00 ₽"
-    },
-    {
-      "operation": "Покупка",
-      "asset": "ЛК Роделен БО 002P-03",
-      "isin": "RU000A10B2F7",
-      "date": "21/09/2026",
-      "qty": "100",
-      "price": "897,18 ₽",
-      "commission": "53,83 ₽",
-      "amount": "91 029,83 ₽",
-      "profit_pct": "4,76%",
-      "profit_abs": "+4 337,17 ₽"
-    },
-    {
-      "operation": "Покупка",
-      "asset": "ГК Самолет БО-П11",
-      "isin": "RU000A104JQ3",
-      "date": "18/09/2026",
-      "qty": "150",
-      "price": "802,81 ₽",
-      "commission": "72,25 ₽",
-      "amount": "124 875,25 ₽",
-      "profit_pct": "4,03%",
-      "profit_abs": "+3 353,83 ₽"
-    },
-    {
-      "operation": "Покупка",
-      "asset": "ГК Самолет БО-П11",
-      "isin": "RU000A104JQ3",
-      "date": "18/09/2026",
-      "qty": "83",
-      "price": "843,50 ₽",
-      "commission": "42,01 ₽",
-      "amount": "72 476,94 ₽",
-      "profit_pct": "0,82%",
-      "profit_abs": "-595,62 ₽"
+      "price": "1 002,60 ₽",
+      "commission": "60,16 ₽",
+      "amount": "101 898,16 ₽",
+      "profit_pct": "0,7%",
+      "profit_abs": "+711,84 ₽"
     },
     {
       "operation": "Покупка",
@@ -7432,8 +7393,8 @@
       "price": "824,70 ₽",
       "commission": "49,48 ₽",
       "amount": "83 008,48 ₽",
-      "profit_pct": "9,89%",
-      "profit_abs": "+8 210,52 ₽"
+      "profit_pct": "9,47%",
+      "profit_abs": "+7 860,52 ₽"
     },
     {
       "operation": "Покупка",
@@ -7444,8 +7405,8 @@
       "price": "616,35 ₽",
       "commission": "73,96 ₽",
       "amount": "126 101,96 ₽",
-      "profit_pct": "1,27%",
-      "profit_abs": "+1 602,44 ₽"
+      "profit_pct": "1,22%",
+      "profit_abs": "+1 540,04 ₽"
     },
     {
       "operation": "Покупка",
@@ -7456,8 +7417,8 @@
       "price": "628,99 ₽",
       "commission": "11,32 ₽",
       "amount": "19 294,72 ₽",
-      "profit_pct": "0,72%",
-      "profit_abs": "-139,06 ₽"
+      "profit_pct": "0,77%",
+      "profit_abs": "-148,42 ₽"
     },
     {
       "operation": "Покупка",
@@ -7468,20 +7429,8 @@
       "price": "967,40 ₽",
       "commission": "11,03 ₽",
       "amount": "18 447,87 ₽",
-      "profit_pct": "1,55%",
-      "profit_abs": "+285,75 ₽"
-    },
-    {
-      "operation": "Покупка",
-      "asset": "ГК Самолет БО-П11",
-      "isin": "RU000A104JQ3",
-      "date": "18/09/2026",
-      "qty": "17",
-      "price": "824,00 ₽",
-      "commission": "8,40 ₽",
-      "amount": "14 512,97 ₽",
-      "profit_pct": "1,44%",
-      "profit_abs": "+209,71 ₽"
+      "profit_pct": "1,56%",
+      "profit_abs": "+287,65 ₽"
     },
     {
       "operation": "Покупка",
@@ -7492,20 +7441,8 @@
       "price": "600,99 ₽",
       "commission": "23,80 ₽",
       "amount": "40 599,28 ₽",
-      "profit_pct": "3,8%",
-      "profit_abs": "+374,10 ₽"
-    },
-    {
-      "operation": "Покупка",
-      "asset": "Ломбард 888 БО-01",
-      "isin": "RU000A10E4F0",
-      "date": "18/09/2026",
-      "qty": "10",
-      "price": "945,00 ₽",
-      "commission": "5,67 ₽",
-      "amount": "9 483,07 ₽",
-      "profit_pct": "2,15%",
-      "profit_abs": "+203,83 ₽"
+      "profit_pct": "3,75%",
+      "profit_abs": "+369,11 ₽"
     },
     {
       "operation": "Покупка",
@@ -7516,8 +7453,8 @@
       "price": "930,00 ₽",
       "commission": "45,20 ₽",
       "amount": "75 614,96 ₽",
-      "profit_pct": "5,62%",
-      "profit_abs": "+4 249,42 ₽"
+      "profit_pct": "5,63%",
+      "profit_abs": "+4 257,52 ₽"
     },
     {
       "operation": "Покупка",
@@ -7528,58 +7465,10 @@
       "price": "620,41 ₽",
       "commission": "1,49 ₽",
       "amount": "2 538,29 ₽",
-      "profit_pct": "0,62%",
-      "profit_abs": "+15,80 ₽"
-    },
-    {
-      "operation": "Покупка",
-      "asset": "Балтийский лизинг ООО БО-П16",
-      "isin": "RU000A10BJX9",
-      "date": "17/09/2026",
-      "qty": "150",
-      "price": "698,56 ₽",
-      "commission": "62,87 ₽",
-      "amount": "106 700,87 ₽",
-      "profit_pct": "-",
-      "profit_abs": ""
-    },
-    {
-      "operation": "Покупка",
-      "asset": "ГК Самолет БО-П11",
-      "isin": "RU000A104JQ3",
-      "date": "17/09/2026",
-      "qty": "100",
-      "price": "888,90 ₽",
-      "commission": "53,33 ₽",
-      "amount": "91 650,33 ₽",
-      "profit_pct": "-",
-      "profit_abs": ""
-    },
-    {
-      "operation": "Покупка",
-      "asset": "Балтийский лизинг ООО БО-П16",
-      "isin": "RU000A10BJX9",
-      "date": "17/09/2026",
-      "qty": "50",
-      "price": "680,10 ₽",
-      "commission": "20,40 ₽",
-      "amount": "34 643,40 ₽",
-      "profit_pct": "-",
-      "profit_abs": ""
-    },
-    {
-      "operation": "Покупка",
-      "asset": "ГК Самолет БО-П11",
-      "isin": "RU000A104JQ3",
-      "date": "16/09/2026",
-      "qty": "50",
-      "price": "921,10 ₽",
-      "commission": "27,63 ₽",
-      "amount": "47 400,63 ₽",
-      "profit_pct": "-",
-      "profit_abs": ""
+      "profit_pct": "0,57%",
+      "profit_abs": "+14,55 ₽"
     }
   ],
-  "old_count": 18,
+  "old_count": 8,
   "old_at": 1790187398
 }
