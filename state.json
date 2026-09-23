@@ -7209,7 +7209,7 @@
     "a7e5c429f53013f3": 1,
     "5cd87850c3b5873a": 1
   },
-  "count": 3753,
+  "count": 3754,
   "baseline": true,
   "warn_at": 1789405845,
   "pairs": [
@@ -7235,7 +7235,7 @@
   ],
   "error": "",
   "how": "browser",
-  "last_ok": 1790175843,
+  "last_ok": 1790176966,
   "pending": [],
   "deep": false,
   "pages": 1,
