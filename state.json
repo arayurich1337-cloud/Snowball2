@@ -7928,7 +7928,7 @@
     "b32daaf122106ab7": 1,
     "3e90dba9bcd35170": 1
   },
-  "count": 3759,
+  "count": 3761,
   "baseline": true,
   "warn_at": 1789405845,
   "pairs": [
@@ -7954,7 +7954,7 @@
   ],
   "error": "",
   "how": "browser",
-  "last_ok": 1790280840,
+  "last_ok": 1790281926,
   "pending": [],
   "deep": false,
   "pages": 1,
