@@ -8001,7 +8001,7 @@
     "21e727d2f71ae84b": 1,
     "e9801433c76e580f": 1
   },
-  "count": 3761,
+  "count": 3773,
   "baseline": true,
   "warn_at": 1789405845,
   "pairs": [
@@ -8027,12 +8027,12 @@
   ],
   "error": "",
   "how": "browser",
-  "last_ok": 1790793496,
+  "last_ok": 1790794579,
   "pending": [],
   "deep": false,
   "pages": 1,
   "name": "Облигационные фантазии",
-  "last_date": "2026-09-24",
+  "last_date": "2026-09-30",
   "site_total": 3783,
   "total": 3783,
   "muted": [],
