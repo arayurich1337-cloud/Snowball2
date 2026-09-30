@@ -1,19 +1,5 @@
 {
   "seen": {
-    "c09865aac31371b8": 1,
-    "c87bc2f69aceda6e": 1,
-    "2d8038e1da9df076": 1,
-    "90c9dc0e164339e6": 1,
-    "e73edee52df9780b": 1,
-    "e0b732030a2ca216": 1,
-    "3308f8bcb4b3c7a9": 1,
-    "920ea7fd455520d5": 1,
-    "6d77109fb7d65e23": 1,
-    "eb0bbda4a67d4f5a": 1,
-    "578e2b43a75b3dc4": 1,
-    "a6e4a637f41f0b7b": 1,
-    "4f7ea7a68383cf71": 1,
-    "3aab2eec1a28925d": 1,
     "11cc8ff44097989f": 1,
     "01d2939ede283565": 1,
     "7a1ef0cbcd6a9549": 1,
@@ -7813,7 +7799,6 @@
     "678b91fd7dfc16ed": 1,
     "18adfbb3c76a76d7": 1,
     "6fcc62d0f4f50e67": 1,
-    "76508e68dbccb81f": 1,
     "18e3bd982b2307e5": 1,
     "1563db918c24c084": 1,
     "aaafa1fb7ef81513": 1,
@@ -7900,6 +7885,21 @@
     "d06b1e81fd49c05d": 1,
     "25f4d69ca15f8804": 1,
     "e1f76f76b84bb4b5": 1,
+    "f11194c20e64df0d": 1,
+    "e036858eb189cc29": 1,
+    "3e5cbf0d61f93be4": 1,
+    "c18c5eedf4c13556": 1,
+    "c0ccaa52a180cda6": 1,
+    "b13fff263b1cf7b3": 1,
+    "99dff7970c1affab": 1,
+    "5206808a6ea7aaba": 1,
+    "5c3d7785c2eaadb9": 1,
+    "043a7feb9aa1b2ec": 1,
+    "e78e0c3de4c53316": 1,
+    "6f5cfe456a0e2e9c": 1,
+    "fe359f7d4c63fd08": 1,
+    "7fd8d04d654cc3c3": 1,
+    "dccf24478e2a6263": 1,
     "cdcfe3171c031dd4": 1,
     "701a88ce2dfa7524": 1,
     "01f9fecc8793644a": 1,
@@ -7909,7 +7909,7 @@
     "fb343fb97b0f242b": 1,
     "aa6b888501a9cd4f": 1,
     "e562fb06132b31aa": 1,
-    "f11194c20e64df0d": 1,
+    "bdb70e888b2cbeea": 1,
     "bc2669feb8e522ae": 1,
     "e41605bd39112dbc": 1,
     "ae9d0ed22619b65c": 1,
@@ -7932,7 +7932,7 @@
     "037e9f8af0441481": 1,
     "b8b5c7be4969038d": 1,
     "d092cf50d8329e72": 1,
-    "e036858eb189cc29": 1,
+    "117e0cb1a64f921e": 1,
     "1e67b81fb54d6f1a": 1,
     "fc61880de054df2e": 1,
     "199141d442965da8": 1,
@@ -7945,25 +7945,25 @@
     "27c8682029fe203c": 1,
     "2791a40526dcef29": 1,
     "59194b4b07eecf15": 1,
-    "3e5cbf0d61f93be4": 1,
+    "e461cf24f6012104": 1,
     "abde08e452427da3": 1,
-    "c18c5eedf4c13556": 1,
-    "c0ccaa52a180cda6": 1,
+    "0cb11f4c5001eb04": 1,
+    "fb6f36aa6512a3bc": 1,
     "4eada5b7b07307fa": 1,
     "a683defbb142ae5e": 1,
     "629e9223a1fa3544": 1,
-    "b13fff263b1cf7b3": 1,
+    "fae19eab5915503d": 1,
     "d59095f63498d07a": 1,
-    "99dff7970c1affab": 1,
-    "5206808a6ea7aaba": 1,
+    "7948375c555a80aa": 1,
+    "431ecd5388184fa7": 1,
     "9571792ea661ce3b": 1,
-    "5c3d7785c2eaadb9": 1,
-    "043a7feb9aa1b2ec": 1,
+    "321b77d1aa5e40a8": 1,
+    "8e0309b34198cedd": 1,
     "56c49e204ded8844": 1,
     "622f6be7bda2c972": 1,
     "2c3795eb8a3ada48": 1,
     "df00c7ded1ebbd56": 1,
-    "e78e0c3de4c53316": 1,
+    "c64f469f05a82281": 1,
     "e8fd2429c1056490": 1,
     "09355bcbf08399bb": 1,
     "3e9ff104f9f04236": 1,
@@ -7978,9 +7978,9 @@
     "a5073e7fb75a055f": 1,
     "543e9bbe774b50f7": 1,
     "327f865e3e073cae": 1,
-    "6f5cfe456a0e2e9c": 1,
-    "fe359f7d4c63fd08": 1,
-    "7fd8d04d654cc3c3": 1,
+    "a35e3442a9959a60": 1,
+    "76508e68dbccb81f": 1,
+    "a6fb0a528f9152a5": 1,
     "1d01556e25795e3b": 1,
     "e5e0d905d5858538": 1,
     "c6f7ad9d324d6099": 1,
@@ -7990,7 +7990,7 @@
     "18c0572a5f47f082": 1,
     "07e05e7b0794e267": 1,
     "df4559d641e80d85": 1,
-    "dccf24478e2a6263": 1,
+    "b56000442087e876": 1,
     "c7280537f2799315": 1,
     "a7e5c429f53013f3": 1,
     "0ca91b3960fee57a": 1,
@@ -8027,7 +8027,7 @@
   ],
   "error": "",
   "how": "browser",
-  "last_ok": 1790765915,
+  "last_ok": 1790767083,
   "pending": [],
   "deep": false,
   "pages": 1,
@@ -8039,6 +8039,18 @@
   "old_hold": [
     {
       "operation": "Покупка",
+      "asset": "БиоВитрум 001Р-02",
+      "isin": "RU000A10EQV2",
+      "date": "23/09/2026",
+      "qty": "50",
+      "price": "1 007,50 ₽",
+      "commission": "30,22 ₽",
+      "amount": "51 201,22 ₽",
+      "profit_pct": "1,33%",
+      "profit_abs": "-682,72 ₽"
+    },
+    {
+      "operation": "Покупка",
       "asset": "АСВ БО-05-001P",
       "isin": "RU000A10FJJ9",
       "date": "21/09/2026",
@@ -8046,8 +8058,8 @@
       "price": "1 002,60 ₽",
       "commission": "60,16 ₽",
       "amount": "101 898,16 ₽",
-      "profit_pct": "1,96%",
-      "profit_abs": "-2 001,16 ₽"
+      "profit_pct": "2,01%",
+      "profit_abs": "-2 051,16 ₽"
     },
     {
       "operation": "Покупка",
@@ -8058,32 +8070,8 @@
       "price": "897,18 ₽",
       "commission": "53,83 ₽",
       "amount": "91 029,83 ₽",
-      "profit_pct": "3,14%",
-      "profit_abs": "+2 856,17 ₽"
-    },
-    {
-      "operation": "Покупка",
-      "asset": "Полипласт АО П02-БО-02",
-      "isin": "RU000A10AYW2",
-      "date": "21/09/2026",
-      "qty": "10",
-      "price": "957,10 ₽",
-      "commission": "5,74 ₽",
-      "amount": "9 598,64 ₽",
-      "profit_pct": "0,57%",
-      "profit_abs": "+54,56 ₽"
-    },
-    {
-      "operation": "Покупка",
-      "asset": "Страна Девелопмент 03",
-      "isin": "RU000A10BP46",
-      "date": "21/09/2026",
-      "qty": "100",
-      "price": "1 000,00 ₽",
-      "commission": "60,00 ₽",
-      "amount": "100 278,00 ₽",
-      "profit_pct": "0,32%",
-      "profit_abs": "+323,00 ₽"
+      "profit_pct": "3,03%",
+      "profit_abs": "+2 756,17 ₽"
     },
     {
       "operation": "Покупка",
@@ -8094,8 +8082,8 @@
       "price": "802,81 ₽",
       "commission": "72,25 ₽",
       "amount": "124 875,25 ₽",
-      "profit_pct": "16,36%",
-      "profit_abs": "-13 617,17 ₽"
+      "profit_pct": "17,08%",
+      "profit_abs": "-14 217,17 ₽"
     },
     {
       "operation": "Покупка",
@@ -8106,8 +8094,8 @@
       "price": "824,00 ₽",
       "commission": "8,40 ₽",
       "amount": "14 512,97 ₽",
-      "profit_pct": "18,43%",
-      "profit_abs": "-2 675,36 ₽"
+      "profit_pct": "19,14%",
+      "profit_abs": "-2 777,36 ₽"
     },
     {
       "operation": "Покупка",
@@ -8118,8 +8106,8 @@
       "price": "600,99 ₽",
       "commission": "23,80 ₽",
       "amount": "40 599,28 ₽",
-      "profit_pct": "5,75%",
-      "profit_abs": "-566,03 ₽"
+      "profit_pct": "5,8%",
+      "profit_abs": "-571,02 ₽"
     },
     {
       "operation": "Покупка",
@@ -8130,8 +8118,20 @@
       "price": "616,35 ₽",
       "commission": "73,96 ₽",
       "amount": "126 101,96 ₽",
-      "profit_pct": "8,05%",
-      "profit_abs": "-10 149,16 ₽"
+      "profit_pct": "8,1%",
+      "profit_abs": "-10 211,56 ₽"
+    },
+    {
+      "operation": "Покупка",
+      "asset": "АПРИ БО-002Р-10",
+      "isin": "RU000A10BM56",
+      "date": "18/09/2026",
+      "qty": "100",
+      "price": "824,70 ₽",
+      "commission": "49,48 ₽",
+      "amount": "83 008,48 ₽",
+      "profit_pct": "9,26%",
+      "profit_abs": "+7 689,52 ₽"
     },
     {
       "operation": "Покупка",
@@ -8142,20 +8142,8 @@
       "price": "843,50 ₽",
       "commission": "42,01 ₽",
       "amount": "72 476,94 ₽",
-      "profit_pct": "20,26%",
-      "profit_abs": "-14 681,55 ₽"
-    },
-    {
-      "operation": "Покупка",
-      "asset": "Ломбард 888 БО-01",
-      "isin": "RU000A10E4F0",
-      "date": "18/09/2026",
-      "qty": "10",
-      "price": "945,00 ₽",
-      "commission": "5,67 ₽",
-      "amount": "9 483,07 ₽",
-      "profit_pct": "3,04%",
-      "profit_abs": "+287,83 ₽"
+      "profit_pct": "20,94%",
+      "profit_abs": "-15 179,55 ₽"
     },
     {
       "operation": "Покупка",
@@ -8166,8 +8154,8 @@
       "price": "620,41 ₽",
       "commission": "1,49 ₽",
       "amount": "2 538,29 ₽",
-      "profit_pct": "8,64%",
-      "profit_abs": "-219,23 ₽"
+      "profit_pct": "8,69%",
+      "profit_abs": "-220,48 ₽"
     },
     {
       "operation": "Покупка",
@@ -8178,8 +8166,32 @@
       "price": "628,99 ₽",
       "commission": "11,32 ₽",
       "amount": "19 294,72 ₽",
-      "profit_pct": "9,86%",
-      "profit_abs": "-1 901,80 ₽"
+      "profit_pct": "9,91%",
+      "profit_abs": "-1 911,16 ₽"
+    },
+    {
+      "operation": "Покупка",
+      "asset": "НПС Капитал 001Р-02",
+      "isin": "RU000A10G5H1",
+      "date": "18/09/2026",
+      "qty": "100",
+      "price": "994,50 ₽",
+      "commission": "59,67 ₽",
+      "amount": "99 657,67 ₽",
+      "profit_pct": "0,89%",
+      "profit_abs": "+883,33 ₽"
+    },
+    {
+      "operation": "Покупка",
+      "asset": "ИА ТБ-9 класс А",
+      "isin": "RU000A10FWR5",
+      "date": "17/09/2026",
+      "qty": "50",
+      "price": "1 000,50 ₽",
+      "commission": "30,01 ₽",
+      "amount": "50 233,01 ₽",
+      "profit_pct": "0,67%",
+      "profit_abs": "+334,49 ₽"
     },
     {
       "operation": "Покупка",
@@ -8190,10 +8202,10 @@
       "price": "1 000,10 ₽",
       "commission": "4,20 ₽",
       "amount": "70 044,80 ₽",
-      "profit_pct": "1,68%",
-      "profit_abs": "+1 178,10 ₽"
+      "profit_pct": "1,69%",
+      "profit_abs": "+1 185,10 ₽"
     }
   ],
-  "old_count": 13,
+  "old_count": 14,
   "old_at": 1790765917
 }
