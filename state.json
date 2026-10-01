@@ -8001,7 +8001,7 @@
     "224f4fd54f4dfdde": 1,
     "3d90cb74560932b0": 1
   },
-  "count": 3782,
+  "count": 3784,
   "baseline": true,
   "warn_at": 1790848944,
   "pairs": [
@@ -8027,7 +8027,7 @@
   ],
   "error": "",
   "how": "browser",
-  "last_ok": 1790887824,
+  "last_ok": 1790888505,
   "pending": [],
   "deep": false,
   "pages": 1,
