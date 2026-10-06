@@ -1,6 +1,5 @@
 {
   "seen": {
-    "5e6268067540a635": 1,
     "b0d801fd1279a993": 1,
     "ff9d4a73e708708c": 1,
     "ba65d1c72ce9d45c": 1,
@@ -7900,6 +7899,7 @@
     "1213dea7e0d9521d": 1,
     "35439e8e71a49a72": 1,
     "20f3a0b1bca9538b": 1,
+    "0b2622b84853dcf8": 1,
     "336e467d50e6d9bf": 1,
     "3a32ad00dfc4d06a": 1,
     "fc61880de054df2e": 1,
@@ -7986,7 +7986,7 @@
     "cf8d48d87bdc2346": 1,
     "00974c0282230e40": 1,
     "8c1ccc79eacfd89b": 1,
-    "0b2622b84853dcf8": 1,
+    "58182f7c8dccca21": 1,
     "3d90cb74560932b0": 1,
     "b49d2f24512c99f8": 1,
     "224f4fd54f4dfdde": 1,
@@ -8027,7 +8027,7 @@
   ],
   "error": "",
   "how": "browser",
-  "last_ok": 1791322293,
+  "last_ok": 1791323289,
   "pending": [],
   "deep": false,
   "pages": 1,
@@ -8039,65 +8039,17 @@
   "old_hold": [
     {
       "operation": "Покупка",
-      "asset": "ГЛОРАКС 001Р-05",
-      "isin": "RU000A10E655",
-      "date": "05/10/2026",
-      "qty": "50",
-      "price": "975,80 ₽",
-      "commission": "29,27 ₽",
-      "amount": "49 128,27 ₽",
-      "profit_pct": "0,45%",
-      "profit_abs": "+218,73 ₽"
-    },
-    {
-      "operation": "Покупка",
-      "asset": "ПРОГРЕСС 001Р-01",
-      "isin": "RU000A10EXG9",
-      "date": "02/10/2026",
-      "qty": "100",
-      "price": "772,90 ₽",
-      "commission": "46,37 ₽",
-      "amount": "78 432,37 ₽",
-      "profit_pct": "6,54%",
-      "profit_abs": "+5 130,63 ₽"
-    },
-    {
-      "operation": "Покупка",
-      "asset": "Транспортная ЛК 001P-05",
-      "isin": "RU000A10F595",
+      "asset": "БИЗНЕС АЛЬЯНС 001P-09",
+      "isin": "RU000A10EN78",
       "date": "01/10/2026",
-      "qty": "100",
-      "price": "929,00 ₽",
-      "commission": "55,74 ₽",
-      "amount": "94 522,74 ₽",
-      "profit_pct": "5,55%",
-      "profit_abs": "+5 250,26 ₽"
-    },
-    {
-      "operation": "Покупка",
-      "asset": "СКС ЛОМБАРД БО-02",
-      "isin": "RU000A10CST6",
-      "date": "18/09/2026",
-      "qty": "81",
-      "price": "930,00 ₽",
-      "commission": "45,20 ₽",
-      "amount": "75 614,96 ₽",
-      "profit_pct": "6,39%",
-      "profit_abs": "+4 833,43 ₽"
-    },
-    {
-      "operation": "Покупка",
-      "asset": "СКС ЛОМБАРД БО-02",
-      "isin": "RU000A10CST6",
-      "date": "18/09/2026",
-      "qty": "19",
-      "price": "967,40 ₽",
-      "commission": "11,03 ₽",
-      "amount": "18 447,87 ₽",
-      "profit_pct": "2,29%",
-      "profit_abs": "+422,74 ₽"
+      "qty": "27",
+      "price": "823,20 ₽",
+      "commission": "13,34 ₽",
+      "amount": "22 430,90 ₽",
+      "profit_pct": "8,31%",
+      "profit_abs": "+1 863,70 ₽"
     }
   ],
-  "old_count": 5,
-  "old_at": 1791321186
+  "old_count": 1,
+  "old_at": 1791323291
 }
