@@ -8003,7 +8003,7 @@
   },
   "count": 3829,
   "baseline": true,
-  "warn_at": 1790848944,
+  "warn_at": 1791722342,
   "pairs": [
     "422491613"
   ],
@@ -8025,9 +8025,9 @@
     778627068,
     778627069
   ],
-  "error": "",
-  "how": "browser",
-  "last_ok": 1791654428,
+  "error": "ни один способ не вернул HTML",
+  "how": "http",
+  "last_ok": 1791722343,
   "pending": [],
   "deep": false,
   "pages": 1,
